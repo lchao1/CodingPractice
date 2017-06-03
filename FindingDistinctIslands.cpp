@@ -1,20 +1,12 @@
 #include <iostream>
 using namespace std;
 
-const int numWidth = 4;
-const int numHeight = 4;
-
-int countIslands(int[][numWidth]);
-void discover(int[][numWidth], int, int);
-
-int main() {
-
-    /*
+ /*
      * Given a 2D array of 1s and 0s, identify
      * the number of distinct islands in the array.
-     *     Island = 1s
+     * Island = 1s
      *
-     *     For example:
+     *     Ex:
      *     {{1, 1, 0, 1},
      *      {0, 1, 0, 0},
      *      {0, 0, 0, 0},
@@ -22,6 +14,14 @@ int main() {
      *
      *     Number of islands will be 3
      */
+
+const int numWidth = 4;
+const int numHeight = 4;
+
+int countIslands(int[][numWidth]);
+void discover(int[][numWidth], int, int);
+
+int main() {
 
     int land[numHeight][numWidth] = {
             {1, 1, 0, 1},
