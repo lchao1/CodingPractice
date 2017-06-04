@@ -15,21 +15,28 @@ using namespace std;
 int main(void) {
 
 	//get string from user input
+	int n;
 	char in1[n];
-	cin << in1[n];
+	cin >> in1[n];
+
+	//initialize flipped array
+	char in1flip[n];
 
 	//flip array
-	int start = in1[0];
-	int end= = in1[n-1];
+	//int start = in1[0];
+	//int end = in1[n-1];
 
-
-
-	//check element by element
-	for(int i=0; i<strlen(int1), i++) {
-		if (in1[i] != in1flip[i])
-			return false;
+	for (int i = 0; i<n; i++) {
+		in1flip[i] = in1[n-1-i];
+		cout << in1flip;
 	}
 
-	return true;
+	//check element by element
+	for(int i=0; i<n; i++) {
+		if (in1[i] != in1flip[i]) {
+			return false;
+		}
+		return true;
+	}
 }
 
